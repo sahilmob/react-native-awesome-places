@@ -24,7 +24,6 @@
 		"react-native/no-inline-styles": 2,
 		"react/jsx-max-props-per-line": [2, { "maximum": 1 }],
 		"react/prop-types": 0,
-		"no-unused-labels": ["warning"],
 		"no-unused-vars": 1
 	}
 }
