@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, TextInput } from "react-native";
+import { View, TextInput, StyleSheet } from "react-native";
 
 export default class App extends Component {
 	state = {
@@ -13,14 +13,26 @@ export default class App extends Component {
 	};
 
 	render() {
+		let { placeName } = this.state;
 		return (
-			<View>
+			<View style={style.container}>
 				<TextInput
-					value={this.state.placeName}
+					value={placeName}
+					placeholder="An aawesome place"
 					onChangeText={this.placeNameChangedHandler}
-					style={{ width: 300, borderColor: "black", borderWidth: 1 }}
+					style={{ width: 300 }}
 				/>
 			</View>
 		);
 	}
 }
+
+const style = StyleSheet.create({
+	container: {
+		flex: 1,
+		backgroundColor: "#fff",
+		alignItems: "center",
+		justifyContent: "flex-start",
+		padding: 20
+	}
+});
