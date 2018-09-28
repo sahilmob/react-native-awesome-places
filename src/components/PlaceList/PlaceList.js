@@ -3,8 +3,8 @@ import ListItem from "../ListItem/Listitem";
 
 const placeList = props => {
 	const { places } = props;
-	const placesOutput = places.map(place => {
-		return <ListItem placeName={place} />;
+	const placesOutput = places.map((place, i) => {
+		return <ListItem key={i} placeName={place} />;
 	});
 	return placesOutput;
 };
