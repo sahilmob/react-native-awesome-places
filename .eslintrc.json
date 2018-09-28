@@ -14,14 +14,17 @@
 	},
 	"plugins": ["react", "react-native"],
 	"rules": {
-		"indent": ["error", "tab"],
-		"quotes": ["error", "double"],
-		"semi": ["error", "always"],
+		"indent": ["warning", "tab"],
+		"quotes": ["warning", "double"],
+		"semi": ["warning", "always"],
 		"react/destructuring-assignment": [2, "always"],
 		"react/no-unused-state": 1,
 		"react/no-this-in-sfc": 1,
 		"react-native/no-unused-styles": 2,
 		"react-native/no-inline-styles": 2,
-		"react/jsx-max-props-per-line": [2, { "maximum": 1 }]
+		"react/jsx-max-props-per-line": [2, { "maximum": 1 }],
+		"react/prop-types": 0,
+		"no-unused-labels": ["warning"],
+		"no-unused-vars": 1
 	}
 }
